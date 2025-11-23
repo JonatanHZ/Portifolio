@@ -174,8 +174,6 @@ section.especialidades {
     padding: 120px 0;
 }
 
-
-
 section.especialidades .flex {
     gap: 60px;
 }
@@ -184,8 +182,8 @@ section.especialidades .flex {
     color: white;
     padding: 40px;
     border-radius: 20px;
-    margin-top: 45px;
-    transition: .2s;
+    margin-top: 40px;
+    transition: 0.2s;
     background-color: #0d1117;
 }
 
@@ -227,7 +225,6 @@ section.sobre .flex {
 .sobre .txt-sobre h2 {
     font-size: 40px;
     line-height: 40px;
-    margin-bottom: 20px;
 }
 
 .sobre .txt-sobre h2 span {
@@ -272,10 +269,11 @@ section.portifolio .flex {
 .img-port {
     width: 360px;
     height: 460px;
+    margin: 0 18px;
     background-size: cover;
     background-position: 100% 0;
     position: relative;
-    transition: 4s;
+    transition: 2s;
     cursor: pointer;
 }
 
@@ -358,4 +356,39 @@ footer {
     text-align: center;
     padding: 20px 0;
     color: #8b949e;
+}
+
+/* Responsividade  */
+@media (max-width: 1000px) {
+    .topo-do-site  {
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 995px) {
+    .topo-do-site .flex {
+        flex-direction: column;
+        margin: 5rem 8rem;
+        text-align: center;
+    }
+
+    .interface {
+        align-items: center;
+    }
+
+    .topo-do-site .flex h1 {
+        font-size: 3rem;
+    }
+
+    section.especialidades .flex {
+        flex-direction: column;
+        align-items: center;
+        padding: 80px;
+    }
+
+    section.sobre .flex {
+        flex-direction: column;
+        text-align: center;
+        margin: 70px;
+    }
 }
